@@ -28,7 +28,7 @@ const styles = {
  container: {
   width: '100%',
   display: 'flex',
-  height: '100%',
+  maxHeight: 'auto',
   nargin: 'auto',
   // backgroundColor: 'whitesmoke',
   padding: '30px 40px',

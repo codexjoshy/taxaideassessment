@@ -85,7 +85,6 @@ font-family: 'Poppins';
   font-weight: 600;
   font-size: 28px;
   line-height: 44px;
-
 color: #4F4F4F;
 }
 .billing-item p{
@@ -191,7 +190,6 @@ font-family: 'Poppins';
     display: none;
   }
   #mobile-app-section .side{
-    
     width:100%;
     /* max-height: auto !important; */
   }
@@ -204,7 +202,7 @@ font-family: 'Poppins';
   } */
   .mobileDescContainer{
     width:100%;
-    display: none;
+    /* display: none; */
   }
   #mobile-app-section .mobileDescContainer p{
     width:100%;
@@ -219,5 +217,29 @@ font-family: 'Poppins';
   .callToAction {
     width:100% !important;
   }
+    .billing-item h5 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 44px;
+      color: #4F4F4F;
+    }
+  
+    .billing-item p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.5rem;
+      line-height: 100%;
+      text-align: left;
+      /* identical to box height, or 29px */
+  
+      display: flex;
+      align-items: center;
+      font-feature-settings: 'salt' on, 'liga' off;
+  
+      color: #4F4F4F;
+    }
 }
 

@@ -45,8 +45,8 @@ export default function NavBar({ }: Props) {
      </div>
      <div className={`mobile-menu ${activeNav && 'active'}`}>
       <ul className='mobile-menu-item'>
-       <li>For Individuals</li>
-       <li>For Businesses</li>
+       <li onClick={() => setRoute('individual')} className={route === 'individual' ? 'active' : ''}>For Individuals</li>
+       <li onClick={() => setRoute('business')} className={route === 'business' ? 'active' : ''}>For Businesses</li>
        <li>About Us</li>
        <li>Contact </li>
        <li>Login </li>

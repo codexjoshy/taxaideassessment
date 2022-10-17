@@ -152,9 +152,27 @@ align-items: center ;
   height:auto;
   /* height: 300px; */
  }
+ .hero h2, .businessHero-itemContainer h2 {
+ /* text-align: center; */
+  font-size: 46px; 
+  line-height: 64px; 
+  padding-bottom: 1rem;
+  /* font-feature-settings: 'salt' on, 'liga' off; */
+  color: #FFFFFF;
+}
   .hero-textContainer {
    /* margin: auto; */
    height: 100%;
    padding: 1rem 0 0 2rem;
+  }
+  .businessHero-content{
+    justify-content: flex-start;
+  }
+  .businessheroCircle, .groupHoto{
+    display: none;
+  }
+
+  .businessHero-content .businessHero-itemContainer{
+    width:100%;
   }
 }
