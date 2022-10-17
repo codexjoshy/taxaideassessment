@@ -1,0 +1,21 @@
+
+#footer-section {
+ background-color: var(--secondary-light);
+}
+.footer {
+ width: 100%;
+ /* height: 80vh; */
+ /* padding: 2.5rem 0 0 0; */
+ /* background-color: var(--primary-dark); */
+ /* position:relative; */
+ /* display: flex; */
+}
+
+.footer h2 {
+ /* text-align: center; */
+ font-size: 46px;
+ line-height: 64px;
+ padding-bottom: 1rem;
+ /* font-feature-settings: 'salt' on, 'liga' off; */
+ color: #FFFFFF;
+}

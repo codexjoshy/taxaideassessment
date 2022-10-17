@@ -1,0 +1,223 @@
+#paymentTools-section{
+  background-color: var(--secondary-light);
+  /* height: 100vh; */
+  width:100%;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+#paymentTools-section h2, h1, h3{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--secondary-text);
+  padding: 1rem;
+}
+#paymentTools-section p{
+font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: var(--secondary-text)
+}
+#paymentTools-section .tools-grid{
+  --gap:1rem;
+  /* --num-rows:3,
+  --column-height:300px; */
+  /* grid-row: 3; */
+  /* grid-template-rows: max-content, grid; */
+  /* display: grid; */
+  /* grid-template-rows: repeat(var(--num-cols), 1fr); */
+  display: flex;
+  /* width:'30%'; */
+  margin: auto;
+  padding:1rem 0 ;
+  gap:var(--gap);
+  flex-wrap: wrap !important  ;
+}
+#paymentTools-section .tools-content{
+  padding: 30px 0 30px 40px;
+  height: 100px;
+}
+
+#billing-section, #mobile-app-section, #callToAction {
+  padding: 5rem 0;
+  display: flex;
+  position: relative;
+}
+#billing-section .left-side{
+  width: 50%;
+  /* background-color: antiquewhite; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#billing-section .billing-info{
+  width:80%;
+  /* height:70%; */
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  border-left: 6px solid #DBE2EA;
+}
+.borderColor{
+  border-left: 5px solid #25A75C;
+}
+#billing-section .billing-info .billing-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 0px 0px 30px;
+  gap: 8px;
+}
+.billing-item h5{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 44px;
+
+color: #4F4F4F;
+}
+.billing-item p{
+font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: left;
+  /* identical to box height, or 29px */
+
+  display: flex;
+  align-items: center;
+  font-feature-settings: 'salt' on, 'liga' off;
+
+  color: #4F4F4F;
+}
+#billing-section .right-side{
+  width: 50%;
+  /* background-color: blueviolet; */
+  height: auto;
+  z-index: 1;
+}
+#billing-section .right-side > img{
+  object-fit: cover;
+}
+#billing-section .billingCircle{
+  position: absolute;
+  left:45%;
+  top:30%;
+  object-fit: contain;
+  /* z-index: -1; */
+}
+
+#mobile-app-section .left-side{
+  width: 55% ;
+}
+
+#mobile-app-section .right-side{
+  width: 45%;
+  display: flex !important;
+  align-items: center ;
+  /* justify-content: center !important; */
+}
+
+#mobile-app-section .mobileDescContainer{
+  /* margin: auto; */
+  /* background-color: aquamarine; */
+  height: 50%;
+  /* width:45%; */
+  /* padding: 1rem 0 0 0; */
+  padding: 0;
+  align-items: flex-start; 
+}
+#mobile-app-section .mobileDescContainer h2{
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 44px;
+    text-align: left;
+    padding: 0;
+    color:var(--secondary-text);
+    letter-spacing: 0.1rem;
+}
+
+#mobile-app-section .mobileDescContainer p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  width:80%;
+  padding-top: 1rem;
+}
+#mobile-app-section .mobileDescContainer .mobileDescStore{
+  width: 65%;
+  justify-content: space-between;
+  display: flex;
+}
+#mobile-app-section .mobileDesc{
+  padding: 1rem 0 !important;
+  text-align: left !important;
+}
+/* media query */
+@media screen and (max-width: 940px) {
+  #paymentTools-section .card{
+    width:100%;
+    max-height:auto;
+  }
+  #billing-section, #mobile-app-section {
+    flex-direction: column;
+  }
+  #billing-section .side{
+    width:100% !important;
+    max-height:auto;
+  }
+  #billing-section .right-side >img{
+    width: 100%;
+
+  }
+  #billing-section .billingCircle{
+    display: none;
+  }
+  #mobile-app-section .side{
+    
+    width:100%;
+    /* max-height: auto !important; */
+  }
+  #mobile-app-section img{
+    width:100%;
+    /* max-height: auto !important; */
+  }
+  /* .mobileDesc p {
+    width:100%;
+  } */
+  .mobileDescContainer{
+    width:100%;
+    display: none;
+  }
+  #mobile-app-section .mobileDescContainer p{
+    width:100%;
+    font-size: 0.5rem;
+  }
+  #mobile-app-section .mobileDescContainer h2{
+    font-size: 1.5rem;
+  }
+  #callToAction div{
+    width:100%;
+  }
+  .callToAction {
+    width:100% !important;
+  }
+}
+
